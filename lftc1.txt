@@ -1,0 +1,49 @@
+defi maxim(int a, int b, int c){
+    int maximum == find_maxim(num1, num2, num3):*
+
+//// Print the result
+
+    show {"The maximum number is:",maximum} :*
+}
+
+defi minim(int a, int b, int c){
+    int minim == find_minim(num1, num2, num3):*
+
+    show {"The min number is:",minim} :*
+}
+
+defi prime(int a){
+    bool is_prime == check_prime(a):*
+
+     is (is_prime == true)? {
+        show{"prime number"}:*
+    }
+    isnot {show {"non prime number"}:*}
+
+}
+
+defi sum(int n){
+    (wile)limit (n>0){
+        list list_n = empty :*
+        list_n =+ n :*
+        n is n-1 :*
+    }
+
+    int i==0 :*
+    limit (i<n){
+        int suma ==0  #syntax error! the execution line must end with :*
+        suma == list_n[i]+suma:* #wrong call of function
+        i is i+1 :*
+        }
+# Print the result
+   show {"The sum is:", suma} :*
+}
+
+
+defi main(){
+    show(maxim(1, 2, 3)) :*
+    show(minim(1, 2, 3)) :*
+    show(sum(3)):*
+
+    pace_out.
+}
