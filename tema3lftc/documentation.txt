@@ -1,0 +1,42 @@
+Documentation
+Token Recognition and Analysis
+Code Overview
+This code performs lexical analysis on a given source code written in a custom programming language. It recognizes various types of tokens (e.g., keywords, identifiers, constants, operators) and stores information about them in two main data structures: the Symbol Table and the Formatted Instruction Program (FIP).
+
+Tables Used
+Symbol Table:
+
+The symbol table is a data structure used to store unique tokens encountered in the source code.
+Tokens in the symbol table are categorized into keywords, identifiers, constants, operators, and delimiters.
+Each token is assigned a unique position/index in the symbol table.
+Formatted Instruction Program (FIP):
+
+The FIP is a data structure that pairs a code with the position of the corresponding token in the symbol table.
+It serves as an intermediary data structure for identifying and categorizing tokens.
+Tokens in the FIP are assigned specific codes to represent their category.
+Token Categories and Codes
+The code defines several regular expressions and assigns codes to tokens based on their categories. The codes are as follows:
+
+FIP Code 0: Identifiers
+
+Represents user-defined names (e.g., variable names, function names).
+FIP Code 1: Data Types
+
+Represents data types such as int, float, char, string.
+FIP Code 2: Constants
+
+Represents numeric values (e.g., integers, floats).
+FIP Code 3: Keywords
+
+Represents reserved words in the programming language (e.g., defi, int, is, isnot).
+FIP Code 4: Operators and Delimiters
+
+Represents operators (e.g., +, -, 😊 and delimiters (e.g., (), {}, []).
+FIP Code 5: String Literals
+
+Represents text enclosed in double quotes.
+Token Recognition
+The code follows a scanning process to recognize tokens in the source code. It iterates through the source code character by character and uses regular expressions to match and categorize tokens. It checks whether a token is a keyword, identifier, constant, operator, delimiter, or string literal.
+
+Error Handling
+The code provides error handling for cases

@@ -1,0 +1,4 @@
+Pozitie | Atom lexical
+3        | 5
+1        | main
+2        | x

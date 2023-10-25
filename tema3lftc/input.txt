@@ -1,0 +1,12 @@
+defi main() {
+    int x == 5 :*
+    int y == 10 :*
+
+    is (x > y) {
+        show { "x is greater than y" :* }
+    } isnot {
+         show { "x is not greater than y" :* }
+    }
+
+    program_out:*
+}
